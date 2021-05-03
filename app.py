@@ -52,4 +52,4 @@ def send_text():
         return render_template('index.html',materials = materials)
 
 # サーバー起動
-app.run(port = 3000, debug=True)
+app.run(debug=false , host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
