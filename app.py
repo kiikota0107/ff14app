@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask import request
+import from os
 
 app = Flask(__name__)
 
@@ -52,4 +53,4 @@ def send_text():
         return render_template('index.html',materials = materials)
 
 # サーバー起動
-app.run(debug=false , host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+app.run(debug=False , host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
