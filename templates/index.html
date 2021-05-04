@@ -61,8 +61,14 @@ h1 {
 
 .input {
   height: 40px;
-  width: 340px;
+  width: 400px;
   margin: 80px auto;
+}
+
+.input_num {
+	width: 50px;
+	height: 35px;
+	font-size: 20px;
 }
 
 select {
@@ -71,7 +77,7 @@ select {
   font-size: 20px;
 }
 
-.input input {
+.submit {
   height: 40px;
   width: 80px;
 }
@@ -83,7 +89,7 @@ select {
 
 .selected {
   height: 35px;
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
   border: solid 1px;
   border-color: #00FFFF;
@@ -98,13 +104,13 @@ select {
   display:flex;
   flex-flow:column;
   height: 280px;
-  width: 210px;
+  width: 260px;
   margin: 0 auto;
 }
 
 .result input {
   height: 40px;
-  width: 200px;
+  width: 250px;
   font-size: 20px;
   margin-top:10px;
 }
@@ -123,7 +129,8 @@ select {
         <option name="menu" value="スモークチキン">スモークチキン×3</option>
         <option name="menu" value="チキンフェットチーネ">チキンフェットゥチーネ×3</option>
       </select>
-      <input type="submit" value="送信" />
+	<input class = "input_num" name = "input_num" type="number"/>
+      <input class = "submit" type="submit" value="送信" />
     </form>
   </div>
   <div class = "container">
